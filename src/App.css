@@ -1,0 +1,61 @@
+/* styles.module.css */
+
+/* Color Variables */
+:root {
+  --background-color: #F9FAFB;
+  --container-color: #FFFFFF;
+
+  --text-color-primary: #333333;
+  --text-color-secondary: #666666;
+  --text-color-tertiary: #999999;
+   /* Shades of Gray */
+   --grey-1: #f7f7f7;
+   --grey-2: #e0e0e0;
+   --grey-3: #c7c7c7;
+   --grey-4: #adadad;
+   --grey-5: #949494;
+   --grey-6: #7a7a7a;
+   --grey-7: #616161;
+   --grey-8: #474747;
+   --grey-9: #2e2e2e;
+   --grey-10: #141414;
+}
+
+/* Font Size Variables */
+:root {
+  --font-size-small: 0.875rem;  
+  --font-size-medium: 1rem;      
+  --font-size-large: 1.125rem;   
+}
+
+
+.container {
+  max-width: 60rem;              
+  margin: 0 auto;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+.primary-text {
+  color: var(--text-color-primary);
+  font-size: var(--font-size-medium);
+}
+
+.secondary-text {
+  color: var(--text-color-secondary);
+  font-size: var(--font-size-small);
+}
+
+.tertiary-text {
+  color: var(--text-color-tertiary);
+  font-size: var(--font-size-small);
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: var(--background-color) !important;
+}

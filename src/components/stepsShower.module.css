@@ -1,0 +1,36 @@
+.stepsContainer{
+    width: 70%;
+    margin: auto;
+    color: var(--grey-9);
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stepsContainer span{
+    background-color: var(--grey-9);
+    color: var(--grey-1);
+    border-radius: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex; /* Ensure elements have width and height */
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; 
+}
+
+.stepsContainer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .stepsContainer{
+        width: 100%;
+    }
+}
+    
