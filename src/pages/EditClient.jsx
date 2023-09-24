@@ -1,60 +1,87 @@
-import React, { useState } from "react";
-import { Button, Container, Dropdown, Form } from "react-bootstrap";
-import styles from "../styles/editclient.module.css";
-import StateDropdown from "../components/stateDropDown";
-import StepsShower from "../components/stepsShower";
-import RadioComponent from "../components/radioComponent";
-import TypeOfCase from "../components/typeOfCase";
+import React, { useState } from 'react';
+import styles from "../styles/editlawyer.module.css";
+const EditClient = () => {
+  // Initialize state variables for the form inputs
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [place, setPlace] = useState('');
+  const [about, setAbout] = useState('');
 
-function EditClient() {
-  const [selectedOption, setSelectedOption] = useState("");
-  const [selectedState, setSelectedState] = useState("Select State");
-  const [selectedIssue, setSelectedIssue] = useState('');
+  // Function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(name,place,about,email);
+    // Create an object to hold the form data
+    const formData = {
+      name,place,about
+    };
+
+    // You can now send this formData to your backend or perform any desired action
+  };
+
   return (
-    <>
-      <StepsShower />
-      <Container className={styles.formContainer}>
-        <h1 className={styles.title}>Case Details</h1>
-        <TypeOfCase selectedIssue={selectedIssue} setSelectedIssue={setSelectedIssue}/>
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Where are you from</Form.Label>
-            <StateDropdown
-              selectedState={selectedState}
-              setSelectedState={setSelectedState}
-            />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Background to the Issue</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={5}
-              placeholder="Write background information here"
-            />
-          </Form.Group>
-
-          <RadioComponent
-            selectedOption={selectedOption}
-            setSelectedOption={setSelectedOption}
+    <div className={`container mt-5 ${styles.formContainer} p-4`} >
+      <h2>Legal Professional Information</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label htmlFor="name" className="form-label">
+            Name
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
           />
-          <Button variant="primary" type="submit" className="my-2">
-            Continue
-          </Button>
-        </Form>
-      </Container>
-    </>
+        </div>
+        <div className="mb-3">
+            <label htmlFor="email" className="form-label">
+                Email
+            </label>
+            <input
+                type="email"
+                className="form-control"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+            />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="place" className="form-label">
+            Place
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="place"
+            value={place}
+            onChange={(e) => setPlace(e.target.value)}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="about" className="form-label">
+            About (1000 words)
+          </label>
+          <textarea
+            className="form-control"
+            id="about"
+            value={about}
+            onChange={(e) => setAbout(e.target.value)}
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
   );
-}
+};
 
 export default EditClient;
