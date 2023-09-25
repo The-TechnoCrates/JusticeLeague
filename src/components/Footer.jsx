@@ -1,4 +1,6 @@
-export default function Login() {
+import React from 'react'
+
+export default function Footer() {
   return (
     <div>
         <div class="h-screen flex">
