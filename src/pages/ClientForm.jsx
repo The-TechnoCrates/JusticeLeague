@@ -13,7 +13,7 @@ function ClientForm() {
   return (
     <>
       <StepsShower />
-      <Container className={`${styles.formContainer} mt-10`}>
+      <Container className={`${styles.formContainer} `}>
         <h1 className={styles.title}>Case Details</h1>
         <TypeOfCase selectedIssue={selectedIssue} setSelectedIssue={setSelectedIssue}/>
         <Form>
@@ -49,7 +49,9 @@ function ClientForm() {
             setSelectedOption={setSelectedOption}
           />
           <Button variant="primary" type="submit" className="bg-primary my-2">
+            <Link to="/clientpage">
             Continue
+            </Link>
           </Button>
         </Form>
       </Container>

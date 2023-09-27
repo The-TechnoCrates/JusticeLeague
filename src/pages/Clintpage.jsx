@@ -13,7 +13,7 @@ function ClientPage() {
     <div>
       <div className="container">
         <div className="navbar">
-          <div className="navbar__logo">
+          <div className="navbar__logo" style={{cursor:"pointer"}}>
             <RxHamburgerMenu/>
           </div>
           <div className="navbar-menu__wrapper">
@@ -35,6 +35,9 @@ function ClientPage() {
           </div>
         </div>
         <div className="hero">
+          <h1>
+
+          </h1>
             <LawyersCards/>
         </div>
       </div>

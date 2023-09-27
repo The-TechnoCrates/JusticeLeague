@@ -7,26 +7,27 @@ function LawyersCards() {
       department: 'Criminal Defense',
       description:
         'Experienced criminal defense lawyer with a track record of successful cases in misdemeanor and felony charges.',
-      imageUrl: 'https://example.com/john-doe.jpg', // Replace with actual image URL
+      imageUrl: 'https://lawrato.com/expert_images/thumb/advocate-rajesh-ks.jpg', // Replace with actual image URL
     },
     {
       name: 'Jane Smith',
       department: 'Family Law',
       description:
         'Dedicated family law attorney specializing in divorce, child custody, and family mediation cases.',
-      imageUrl: 'https://example.com/jane-smith.jpg', // Replace with actual image URL
+      imageUrl: 'https://lawrato.com/expert_images/thumb/webp/advocate-prerna-oberoi.webp', // Replace with actual image URL
     },
     {
       name: 'Michael Johnson',
       department: 'Real Estate',
       description:
         'Real estate lawyer with expertise in property transactions, contract review, and real estate litigation.',
-      imageUrl: 'https://example.com/michael-johnson.jpg', // Replace with actual image URL
+      imageUrl: 'https://lawrato.com/expert_images/thumb/webp/advocate-sudershani-ray.webp', // Replace with actual image URL
     },
   ];
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 mt-40" style={{marginTop:"40px"}}>
+      <h1 className='text-xl'>Recommended Lawyers:</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {lawyers.map((lawyer, index) => (
           <div

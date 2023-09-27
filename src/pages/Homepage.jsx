@@ -11,8 +11,8 @@ function Homepage() {
     <div>
       <div className="container">
         <div className="navbar">
-          <div className="navbar__logo">
-            <RxHamburgerMenu />
+        <div className="navbar__logo" style={{cursor:"pointer"}}>
+            <RxHamburgerMenu/>
           </div>
           <div className="navbar-menu__wrapper">
             <div className="navbar__menu">
