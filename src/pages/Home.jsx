@@ -1,16 +1,15 @@
 import React from "react";
 import Footer from "../components/Footer";
-import { Navbar } from "react-bootstrap";
 import Practice_area from "../components/Practice_area";
-import Testimonial from "../components/Testimonial"
+import Testimonial from "../components/Testimonial";
+import Homepage from "./Homepage";
 function Home() {
   return (
     <div className="">
-      <Navbar />
-      <Practice_area/>
-      <Testimonial/>
+      <Homepage />
+      <Practice_area />
+      <Testimonial />
       <Footer />
-
     </div>
   );
 }

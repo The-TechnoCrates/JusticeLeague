@@ -31,7 +31,7 @@ const Edit = () => {
   return (
 
     <div className={`container mt-5 ${styles.formContainer} p-4`} >
-      <h2>Legal Professional Information</h2>
+      <h2 className='text-xl mb-10 '>Legal Professional Information</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
@@ -124,7 +124,7 @@ const Edit = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className=" bg-primary btn btn-primary">
           Submit
         </button>
       </form>

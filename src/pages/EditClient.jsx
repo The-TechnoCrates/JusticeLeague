@@ -1,27 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "../styles/editlawyer.module.css";
 const EditClient = () => {
   // Initialize state variables for the form inputs
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [place, setPlace] = useState('');
-  const [about, setAbout] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [place, setPlace] = useState("");
+  const [about, setAbout] = useState("");
 
   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name,place,about,email);
+    console.log(name, place, about, email);
     // Create an object to hold the form data
     const formData = {
-      name,place,about
+      name,
+      place,
+      about,
     };
 
     // You can now send this formData to your backend or perform any desired action
   };
 
   return (
-    <div className={`container mt-5 ${styles.formContainer} p-4`} >
-      <h2>Legal Professional Information</h2>
+    <div className={`container mt-5 ${styles.formContainer} p-4`}>
+      <h2 className="text-2xl mb-4 ">Client Information</h2>
+      <h2 className="text-xl mb-8 ">Enter your info</h2>
+
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
@@ -37,17 +42,17 @@ const EditClient = () => {
           />
         </div>
         <div className="mb-3">
-            <label htmlFor="email" className="form-label">
-                Email
-            </label>
-            <input
-                type="email"
-                className="form-control"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-            />
+          <label htmlFor="email" className="form-label">
+            Email
+          </label>
+          <input
+            type="email"
+            className="form-control"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
         </div>
 
         <div className="mb-3">
@@ -76,8 +81,10 @@ const EditClient = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary bg-primary">
+          <Link to="/client-form">
           Submit
+          </Link>
         </button>
       </form>
     </div>

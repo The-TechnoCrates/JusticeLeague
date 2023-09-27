@@ -5,9 +5,9 @@ export default function Practice_area() {
     <div>
         <section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">We help you in multiple practice areas, across various locations!
+      <h3 className="sm:text-lg text-lg font-medium title-font text-center text-gray-900 my-10">We help you in multiple practice areas, across various locations!
         <br className="hidden sm:block"/>Checkout below articles !! 
-      </h1>
+      </h3>
       <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
         <div className="p-4 md:w-1/3 flex">
           <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
