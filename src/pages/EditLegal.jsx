@@ -30,7 +30,7 @@ const Edit = () => {
 
   return (
 
-    <div className={`container mt-5 ${styles.formContainer} p-4`} >
+    <div className={`container mt-5 ${styles.formContainer} p-4 md:w-[90%] max-w-[500px]`} >
       <h2 className='text-xl mb-10 '>Legal Professional Information</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">

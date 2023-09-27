@@ -23,10 +23,9 @@ const EditClient = () => {
   };
 
   return (
-    <div className={`container mt-5 ${styles.formContainer} p-4`}>
+    <div className={`container mt-5 md:w-[90%]  ${styles.formContainer} p-4`}>
       <h2 className="text-2xl mb-4 ">Client Information</h2>
       <h2 className="text-xl mb-8 ">Enter your info</h2>
-
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
