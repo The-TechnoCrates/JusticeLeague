@@ -38,7 +38,7 @@ function Homepage() {
             </div>
             <div className="title">
               <span>
-                Join <span className="summer">Justice Leagues</span>
+                Join <span className="summer">Legal Ease</span>
               </span>
             </div>
             <div className="description">
