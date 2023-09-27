@@ -5,13 +5,14 @@ import bars from "../assets/bars.png";
 import back from "../assets/background.jpg";
 import twitter from "../assets/twitter.png";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 function Homepage() {
   return (
     <div>
       <div className="container">
         <div className="navbar">
           <div className="navbar__logo">
-            <img src={bars} alt="Logo" />
+            <RxHamburgerMenu />
           </div>
           <div className="navbar-menu__wrapper">
             <div className="navbar__menu">

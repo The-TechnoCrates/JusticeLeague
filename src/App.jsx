@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Edit from "./pages/EditLegal";
 import Licence from "./pages/submitLicence";
+import ClientPage from "./pages/Clintpage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/profile-client" element={<EditClient />} />
         <Route path="/licence" element={<Licence />} />
+        <Route path="/clientpage" element={<ClientPage/>}/>
       </Routes>
     </BrowserRouter>
   );
