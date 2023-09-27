@@ -7,7 +7,6 @@ function RadioComponent({selectedOption, setSelectedOption}) {
   };
   return (
     <div>
-    
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>I am filling this form on behalf of</Form.Label>
         <Form.Check
