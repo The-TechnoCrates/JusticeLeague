@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "../styles/editlawyer.module.css";
 const Edit = () => {
   // Initialize state variables for the form inputs
-  const [name, setName] = useState('');
-  const [place, setPlace] = useState('');
-  const [experience, setExperience] = useState('');
-  const [casesSolved, setCasesSolved] = useState('');
-  const [practicingArea, setPracticingArea] = useState('');
-  const [category, setCategory] = useState('');
-  const [about, setAbout] = useState('');
+  const [name, setName] = useState("");
+  const [place, setPlace] = useState("");
+  const [experience, setExperience] = useState("");
+  const [casesSolved, setCasesSolved] = useState("");
+  const [practicingArea, setPracticingArea] = useState("");
+  const [category, setCategory] = useState("");
+  const [about, setAbout] = useState("");
 
   // Function to handle form submission
   const handleSubmit = (e) => {
@@ -29,9 +30,10 @@ const Edit = () => {
   };
 
   return (
-
-    <div className={`container mt-5 ${styles.formContainer} p-4 md:w-[90%] max-w-[500px]`} >
-      <h2 className='text-xl mb-10 '>Legal Professional Information</h2>
+    <div
+      className={`container mt-5 ${styles.formContainer} p-4 md:w-[90%] max-w-[500px]`}
+    >
+      <h2 className="text-xl mb-10 ">Legal Professional Information</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
@@ -124,9 +126,9 @@ const Edit = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className=" bg-primary btn btn-primary">
-          Submit
-        </button>
+        <Link to="/submit-licence">
+          <button className=" bg-primary btn btn-primary">Submit</button>
+        </Link>
       </form>
     </div>
   );

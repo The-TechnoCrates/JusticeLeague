@@ -1,9 +1,9 @@
 import React from "react";
-import insta from "../assets/instagram.png"
-import facebook from "../assets/facebook.png"
-import bars from "../assets/bars.png"
-import back from "../assets/background.jpg"
-import twitter from "../assets/twitter.png"
+import insta from "../assets/instagram.png";
+import facebook from "../assets/facebook.png";
+import bars from "../assets/bars.png";
+import back from "../assets/background.jpg";
+import twitter from "../assets/twitter.png";
 import { Link } from "react-router-dom";
 function Homepage() {
   return (
@@ -43,7 +43,14 @@ function Homepage() {
             </div>
             <div className="description">
               <span>
-              Discover a tailored eMarketplace designed exclusively for legal professionals. Our platform seamlessly connects legal service providers with clients seeking expert assistance. Whether you're a seasoned attorney, paralegal, or legal consultant, finding the right clients has never been easier. Likewise, clients can efficiently locate experienced legal professionals to address their unique needs. Experience a smarter, more efficient way to connect and thrive in the legal industry.
+                Discover a tailored eMarketplace designed exclusively for legal
+                professionals. Our platform seamlessly connects legal service
+                providers with clients seeking expert assistance. Whether you're
+                a seasoned attorney, paralegal, or legal consultant, finding the
+                right clients has never been easier. Likewise, clients can
+                efficiently locate experienced legal professionals to address
+                their unique needs. Experience a smarter, more efficient way to
+                connect and thrive in the legal industry.
               </span>
             </div>
             <button className="order-now">Drop your info here!</button>
@@ -62,9 +69,6 @@ function Homepage() {
           <div className="hero__image">
             <img src={back} alt="pic" />
           </div>
-        </div>
-        <div className="background">
-          <img src="" alt="Background pic" />
         </div>
       </div>
     </div>
