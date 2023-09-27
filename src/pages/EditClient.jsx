@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/editlawyer.module.css";
+import StateDropdown from "../components/stateDropDown";
 const EditClient = () => {
   // Initialize state variables for the form inputs
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [place, setPlace] = useState("");
   const [about, setAbout] = useState("");
-
+  const [selectedState, setSelectedState] = useState("Select State");
   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -53,10 +54,13 @@ const EditClient = () => {
             required
           />
         </div>
-
-        <div className="mb-3">
+        <StateDropdown
+              selectedState={selectedState}
+              setSelectedState={setSelectedState}
+        />
+        <div className="mb-3 mt-3">
           <label htmlFor="place" className="form-label">
-            Place
+            District
           </label>
           <input
             type="text"
@@ -81,9 +85,7 @@ const EditClient = () => {
           ></textarea>
         </div>
         <button type="submit" className="btn btn-primary bg-primary">
-          <Link to="/client-form">
-          Submit
-          </Link>
+          <Link to="/client-form">Submit</Link>
         </button>
       </form>
     </div>
