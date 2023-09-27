@@ -4,7 +4,12 @@ import { Container, Form } from "react-bootstrap";
 function Licence() {
   return (
     <Container>
-     <h1>Hello</h1>
+        <Form>
+            <Form.Group>
+                <Form.Label>Business Licence Number</Form.Label>
+                <Form.Control type="text" placeholder="Enter Licence Number" />
+            </Form.Group>
+        </Form>
     </Container>
   );
 }
