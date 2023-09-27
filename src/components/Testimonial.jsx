@@ -5,37 +5,37 @@ const testimonials = [
     type: "client",
     name: "Sarah T.",
     message:
-      "I was in urgent need of legal assistance, and Legal Marketplace came to my rescue! Within hours, I found a highly skilled attorney who guided me through my legal issue with expertise and care. I can't thank this platform enough for connecting me with the right legal professional.",
+      "I was in urgent need of legal assistance, and Legal Ease came to my rescue! Within hours, I found a highly skilled attorney who guided me through my legal issue with expertise and care. I can't thank this platform enough for connecting me with the right legal professional.",
   },
   {
     type: "legal Professional",
     name: "David R.",
     message:
-      "As a legal service provider, Legal Marketplace has been a game-changer for me. The platform is user-friendly, and it's incredibly easy to connect with clients who need my expertise. It has expanded my client base and made my legal practice more efficient.",
+      "As a legal service provider, Legal Ease has been a game-changer for me. The platform is user-friendly, and it's incredibly easy to connect with clients who need my expertise. It has expanded my client base and made my legal practice more efficient.",
   },
   {
     type: "client",
     name: "John M.",
     message:
-      "I was hesitant at first, but using Legal Marketplace was a breeze. I could browse profiles of legal professionals, check their credentials, and choose the perfect attorney for my case. The platform's transparency and convenience made my legal journey stress-free.",
+      "I was hesitant at first, but using Legal Ease was a breeze. I could browse profiles of legal professionals, check their credentials, and choose the perfect attorney for my case. The platform's transparency and convenience made my legal journey stress-free.",
   },
   {
     type: "legal Professional",
     name: "Lisa K.",
     message:
-      "Legal Marketplace has given me the exposure I needed as a solo practitioner. The ability to showcase my skills and connect with clients who genuinely require my services has been a fantastic experience. It's a win-win for both clients and legal professionals.",
+      "Legal Ease has given me the exposure I needed as a solo practitioner. The ability to showcase my skills and connect with clients who genuinely require my services has been a fantastic experience. It's a win-win for both clients and legal professionals.",
   },
   {
     type: "client",
     name: "Michael S.",
     message:
-      "Legal Marketplace offers a wide range of legal experts. I needed a specialized attorney for my business matter, and I found the perfect match here. The platform's search filters made it easy to pinpoint the right professional for my needs.",
+      "Legal Ease offers a wide range of legal experts. I needed a specialized attorney for my business matter, and I found the perfect match here. The platform's search filters made it easy to pinpoint the right professional for my needs.",
   },
   {
     type: "legal Professional",
     name: "Jessica L.",
     message:
-      "Joining Legal Marketplace has been a smart decision for my law firm. The platform's tools for managing inquiries, scheduling consultations, and securing clients are top-notch. It's a great platform for legal practitioners looking to expand their horizons.",
+      "Joining Legal Ease has been a smart decision for my law firm. The platform's tools for managing inquiries, scheduling consultations, and securing clients are top-notch. It's a great platform for legal practitioners looking to expand their horizons.",
   },
 ];
 
