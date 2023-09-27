@@ -1,9 +1,7 @@
-import React from 'react'
-
-function Signup() {
-  return (
-    <div>Signup</div>
-  )
+import React, { useState } from "react";
+import Signup from "../components/Signup";
+function SignupPage() {
+  return <Signup />;
 }
 
-export default Signup
+export default SignupPage;

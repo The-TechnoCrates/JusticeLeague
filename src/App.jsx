@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Edit from "./pages/EditLegal";
 import ClientForm from "./pages/ClientForm";
 import EditClient from "./pages/EditClient";
+import Signup from "./pages/Signup";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/client-form" element={<ClientForm/>}/>
         <Route path="/profile-lawyer" element={<Edit/>}/>
         <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
         <Route path="/profile-client" element={<EditClient/>}/>
       </Routes>
     </BrowserRouter>
